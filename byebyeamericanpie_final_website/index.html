@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Experience Don McLean's American Pie Parking, explore the story behind the song and the Buddy Holly memorial site. Plan your visit now.">
+    <title>Bye Bye American Pie - Remembering The Day the Music Died</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-image: url('https://source.unsplash.com/random/1920x1080?cornfield,memorial');
+            background-size: cover;
+            background-position: center;
+            color: white;
+        }
+        header, footer {
+            background-color: rgba(0, 0, 0, 0.6);
+        }
+        button:hover {
+            background-color: #ffc107;
+        }
+    </style>
+</head>
+<body>
+    <header class="py-8 text-center">
+        <h1 class="text-5xl font-bold">Bye Bye American Pie</h1>
+        <p class="text-2xl mt-4">Explore the Story of the Day the Music Died and Visit the Memorial Site</p>
+        <button class="mt-6 px-4 py-2 bg-yellow-400 text-black font-bold text-xl">Plan Your Visit</button>
+    </header>
+
+    <main class="container mx-auto mt-16">
+        <section class="text-center mb-12">
+            <h2 class="text-4xl font-bold">The Story Behind American Pie</h2>
+            <p class="mt-4">On February 3, 1959, a tragic plane crash near Clear Lake, Iowa, claimed the lives of rock legends Buddy Holly, Ritchie Valens, and The Big Bopper. Don McLean’s famous song "American Pie" immortalized this moment as "the day the music died." Our site offers an opportunity to explore the history, visit the memorial, and pay respects to these rock ‘n’ roll legends.</p>
+        </section>
+
+        <section class="mb-12">
+            <h2 class="text-4xl font-bold text-center">Memorial and Visitor Reviews</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-8">
+                <img src="https://source.unsplash.com/random/400x300?memorial,glasses" alt="Buddy Holly Glasses Memorial" class="w-full h-auto">
+                <img src="https://source.unsplash.com/random/400x300?landmark,memorial" alt="Buddy Holly Memorial Site" class="w-full h-auto">
+                <img src="https://source.unsplash.com/random/400x300?grave,field" alt="Crash Site" class="w-full h-auto">
+            </div>
+            <p class="mt-4 text-center">"Nice gravel parking area with a porta potty. It’s touching to see people giving up their land for visitors to honor the musicians." - Angie T.</p>
+            <p class="text-center">"The path leads you to the crash site memorials where visitors come to pay respects. It’s a moving experience for music fans from around the world." - Greg N.</p>
+        </section>
+
+        <section class="text-center mb-12">
+            <h2 class="text-4xl font-bold">Comments Section</h2>
+            <form action="" method="POST" class="mx-auto max-w-lg mt-4">
+                <input type="text" name="name" placeholder="Your Name" class="block w-full p-2 mb-2 border border-gray-300">
+                <input type="text" name="location" placeholder="Where are you from?" class="block w-full p-2 mb-2 border border-gray-300">
+                <textarea name="comment" placeholder="Leave a comment" class="block w-full p-2 mb-4 border border-gray-300"></textarea>
+                <button type="submit" class="px-4 py-2 bg-yellow-400 text-black font-bold">Submit</button>
+            </form>
+            <div class="mt-8">
+                <h3 class="text-2xl font-bold">Recent Comments</h3>
+                <p class="mt-4">John from New York: "Loved the experience! The memorial was touching."</p>
+                <p class="mt-2">Samantha from California: "A must-visit for any music lover."</p>
+            </div>
+        </section>
+
+        <section id="map" class="mb-12 text-center">
+            <h2 class="text-4xl font-bold">Plan Your Visit</h2>
+            <p class="mt-4">We are located at 22728 Gull Ave, Clear Lake, IA. Use the map below to plan your visit and explore nearby attractions.</p>
+            <iframe class="w-full h-96 mt-8" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3169.388199393053!2d-93.37983698468706!3d43.22051677913871!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87f00b76e4c56f3b%3A0x509fe705f9d5e16e!2sBuddy%20Holly%20Crash%20Site!5e0!3m2!1sen!2sus!4v1637682733916!5m2!1sen!2sus" frameborder="0" allowfullscreen aria-hidden="false"></iframe>
+        </section>
+    </main>
+
+    <footer class="py-6 text-center text-sm">
+        <p>&copy; 2024 Bye Bye American Pie. All rights reserved. Contact us at: <a href="mailto:andrew@churchofchaos.org" class="text-yellow-400">andrew@churchofchaos.org</a></p>
+        <p class="mt-4">Scan the QR code to visit our site:</p>
+        <img src="byebyeamericanpie_qr.png" alt="QR Code to Visit the Website" class="mx-auto mt-4 w-40 h-40">
+    </footer>
+</body>
+</html>
