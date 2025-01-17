@@ -1,83 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Experience Don McLean's American Pie Parking, explore the story behind the song and the Buddy Holly memorial site. Plan your visit now.">
-    <title>Bye Bye American Pie - Remembering The Day the Music Died</title>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <style>
-        body {
-            background: linear-gradient(to right, #ff7e5f, #feb47b);
-            color: #000;
-            font-family: 'Roboto', sans-serif;
-        }
-        header, footer {
-            background: linear-gradient(to right, #43cea2, #185a9d);
-            color: white;
-        }
-        button {
-            transition: background-color 0.3s, transform 0.3s;
-        }
-        button:hover {
-            background-color: #ff6f61;
-            transform: scale(1.1);
-        }
-        h1, h2 {
-            font-family: 'Oswald', sans-serif;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bye Bye American Pie</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header class="py-8 text-center">
-        <h1 class="text-5xl font-bold">Bye Bye American Pie</h1>
-        <p class="text-2xl mt-4">Explore the Story of the Day the Music Died and Visit the Memorial Site</p>
-        <button class="mt-6 px-4 py-2 bg-yellow-400 text-black font-bold text-xl">Plan Your Visit</button>
-    </header>
+  <header>
+    <h1>Bye Bye American Pie</h1>
+    <p>A historic site honoring Don McLean's "American Pie" and the Buddy Holly memorial.</p>
+  </header>
 
-    <main class="container mx-auto mt-16">
-        <section class="text-center mb-12">
-            <h2 class="text-4xl font-bold">The Story Behind American Pie</h2>
-            <p class="mt-4">On February 3, 1959, a tragic plane crash near Clear Lake, Iowa, claimed the lives of rock legends Buddy Holly, Ritchie Valens, and The Big Bopper. Don McLean’s famous song "American Pie" immortalized this event as "The Day the Music Died."</p>
-        </section>
+  <nav>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#camping">Camping</a></li>
+      <li><a href="#forum">Visitor Forum</a></li>
+      <li><a href="#future-plans">Future Plans</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
 
-        <section class="mb-12">
-            <h2 class="text-4xl font-bold text-center">Memorial and Visitor Reviews</h2>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-8">
-                <img src="https://source.unsplash.com/random/400x300?memorial,glasses" alt="Buddy Holly Glasses Memorial" class="w-full h-auto">
-                <img src="https://source.unsplash.com/random/400x300?landmark,memorial" alt="Buddy Holly Memorial Site" class="w-full h-auto">
-                <img src="https://source.unsplash.com/random/400x300?grave,field" alt="Crash Site" class="w-full h-auto">
-            </div>
-            <p class="mt-4 text-center">"Nice gravel parking area with a porta potty. It’s touching to see people giving up their land for visitors to honor the musicians." - Angie T.</p>
-            <p class="text-center">"The path leads you to the crash site memorials where visitors come to pay respects. It’s a moving experience for music fans from around the world." - Greg N.</p>
-        </section>
+  <main>
+    <section id="about">
+      <h2>About the Site</h2>
+      <p>Welcome to the memorial site for "American Pie" and the Buddy Holly crash site. Learn about the history and significance of this special place.</p>
+    </section>
 
-        <section class="text-center mb-12">
-            <h2 class="text-4xl font-bold">Comments Section</h2>
-            <form action="" method="POST" class="mx-auto max-w-lg mt-4">
-                <input type="text" name="name" placeholder="Your Name" class="block w-full p-2 mb-2 border border-gray-300">
-                <input type="text" name="location" placeholder="Where are you from?" class="block w-full p-2 mb-2 border border-gray-300">
-                <textarea name="comment" placeholder="Leave a comment" class="block w-full p-2 mb-4 border border-gray-300"></textarea>
-                <button type="submit" class="px-4 py-2 bg-yellow-400 text-black font-bold">Submit</button>
-            </form>
-            <div class="mt-8">
-                <h3 class="text-2xl font-bold">Recent Comments</h3>
-                <p class="mt-4">John from New York: "Loved the experience! The memorial was touching."</p>
-                <p class="mt-2">Samantha from California: "A must-visit for any music lover."</p>
-            </div>
-        </section>
+    <section id="camping">
+      <h2>Overnight Camping</h2>
+      <p>Enjoy overnight camping at our site. Explore nature and connect with history under the stars. More features coming soon!</p>
+    </section>
 
-        <section id="map" class="mb-12 text-center">
-            <h2 class="text-4xl font-bold">Plan Your Visit</h2>
-            <p class="mt-4">We are located directly across from the crash site near Clear Lake, IA. Use the map below to plan your visit and explore nearby attractions.</p>
-            <iframe class="w-full h-96 mt-8" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3169.388199393053!2d-93.37983698468706!3d43.22051677913871!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87b7f5e1bd7e2a17%3A0x9d5085c0bff4c2e2!2sBuddy%20Holly%20Crash%20Site!5e0!3m2!1sen!2sus!4v1640996848483!5m2!1sen!2sus" allowfullscreen="" loading="lazy"></iframe>
-        </section>
-    </main>
+    <section id="forum">
+      <h2>Visitor Forum</h2>
+      <div id="forum-container">
+        <textarea id="visitor-message" placeholder="Write your message here..."></textarea>
+        <button onclick="postMessage()">Post Message</button>
+        <div id="messages"></div>
+      </div>
+    </section>
 
-    <footer class="py-6 text-center text-sm">
-        <p>&copy; 2024 Bye Bye American Pie. All rights reserved. Contact us at: <a href="mailto:andrew@churchofchaos.org" class="text-yellow-400">andrew@churchofchaos.org</a></p>
-        <p class="mt-4">Scan the QR code to visit our site:</p>
-        <img src="byebyeamericanpie_qr.png" alt="QR Code to Visit the Website" class="mx-auto mt-4 w-40 h-40">
-    </footer>
+    <section id="future-plans">
+      <h2>Future Plans</h2>
+      <p>We’re working on adding a playground, shelter house, and restrooms. Stay tuned for updates!</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Bye Bye American Pie. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
